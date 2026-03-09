@@ -947,13 +947,13 @@ ul.press-coverage {
 }
 
 .artist-statement-image{
-    flex: 1;
+    flex: 0 0 220px;   /* fixed column width */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .artist-statement-image img{
-    width: 160px;
+    width: 100%;
     height: auto;
 }
 
