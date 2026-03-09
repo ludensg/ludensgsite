@@ -926,3 +926,54 @@ ul.press-coverage {
     text-align: left;
   }
 }
+
+.artist-statement-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 20px;
+}
+
+.artist-statement-text {
+    flex: 1.4;
+}
+
+.artist-statement-text p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #111;
+    background-color: rgba(255, 244, 229, 0.86);
+    padding: 18px;
+    margin: 0;
+}
+
+.artist-statement-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.artist-statement-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.35);
+}
+
+@media (max-width: 768px) {
+    .artist-statement-layout {
+        flex-direction: column;
+    }
+
+    .artist-statement-text p {
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+    .artist-statement-image img {
+        max-width: 100%;
+    }
+}
