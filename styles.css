@@ -956,11 +956,10 @@ ul.press-coverage {
 }
 
 .artist-statement-image img {
-    width: 100%;
-    max-width: 420px;
+    width: 60%;
+    max-width: 240px;
     height: auto;
     display: block;
-    border: 1px solid rgba(255,255,255,0.35);
 }
 
 @media (max-width: 768px) {
