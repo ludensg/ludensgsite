@@ -927,16 +927,14 @@ ul.press-coverage {
   }
 }
 
-.artist-statement-layout {
+.artist-statement-layout{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 32px;
-    padding: 20px;
+    gap: 30px;
 }
 
-.artist-statement-text {
-    flex: 1.4;
+.artist-statement-text{
+    flex: 3;
 }
 
 .artist-statement-text p {
@@ -948,31 +946,29 @@ ul.press-coverage {
     margin: 0;
 }
 
-.artist-statement-image {
+.artist-statement-image{
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
 }
 
-.artist-statement-image img {
-    width: 60%;
-    max-width: 240px;
+.artist-statement-image img{
+    width: 160px;
     height: auto;
-    display: block;
 }
 
-@media (max-width: 768px) {
-    .artist-statement-layout {
-        flex-direction: column;
-    }
+@media (max-width: 800px){
 
-    .artist-statement-text p {
-        font-size: 1.05rem;
-        line-height: 1.65;
-    }
+.artist-statement-layout{
+    flex-direction: column;
+}
 
-    .artist-statement-image img {
-        max-width: 100%;
-    }
+.artist-statement-image{
+    justify-content: center;
+}
+
+.artist-statement-image img{
+    width: 220px;
+}
+
 }
